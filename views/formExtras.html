@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+            rel="icon"
+            type="image/x-icon"
+            href="data:image/png;base64,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"
+    />
+    <link rel="stylesheet" href="static/style.css">
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"
+    />
+    <title>Robotel Extrasel</title>
+    <style>
+        .container-fluid {
+            background-color: #036c78;
+        }
+
+        button {
+            background-color: #036c78;
+            border: 1px solid #036c78;
+        }
+
+        button:hover {
+            color: #036c78;
+            border: 1px solid #036c78;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Robotei Nebunei</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/getExtras">Extrase</a></li>
+                <li><a href="/getCertificat">Certificate</a></li>
+                <li><a href="/getCertificatNefacut">Trimite Certificat</a></li>
+                <li><a href="/getEORI">EORI</a></li>
+                <li><a href="/getInformare">Informare</a></li>
+                <li><a href="/getONRC">Facturi ONRC</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="serviceBox">
+                    <div class="service-icon">
+                        <span><i class="fa fa-globe"></i></span>
+                    </div>
+                    <form class="description" id="form" action = "/sendExtras" enctype='multipart/form-data' method='POST'>
+                        <label for="tipExtras">Tip Document</label><br/>
+                        <select id="tipExtras" name="tipExtras">
+                            <option value="Carte Funciara">Carte Funciara</option>
+                            <option value="Plan Cadastral">Plan Cadastral</option>
+                            <option value="Lipsa Imobil">Lipsa Imobil</option>
+                        </select>
+                        <br/><br/>
+                        <label for="email">Email</label><br/>
+                        <input name="email" required id="email" />
+                        <br/><br/>
+                        <label for="phone">Telefon</label><br/>
+                        <input name="phone" id="phone" />
+                        <br/><br/>
+                        <div id="cuiDiv">
+                            <label>Factura pe</label><br/>
+                            <select id="factura" name="factura">
+                                <option value="CARD">CARD</option>
+                                <option value="OP">OP</option>
+                            </select>
+                            <br/><br/>
+                        </div>
+
+                        <label>Persoana Fizica</label><br/>
+                        <select id="persFizica" name="persFizica">
+                            <option selected value="DA">DA</option>
+                            <option value="NU">NU</option>
+                        </select>
+                        <br/><br/>
+
+                        <div id="factDiv">
+                            <label>CUI Factura</label><br/>
+                            <input type="text" id="cuiFactura" name="cuiFactura"/>
+                        </div>
+
+                        <div id="persDiv">
+                            <label>Nume Persoana Fizica</label><br/>
+                            <input type="text" id="persFactura" name="persFactura"/>
+                            <br/><br/>
+                        </div>
+
+                        <div id="adresaDiv">
+                            <label for="judet">Judet</label><br/>
+                            <select id="judet" name="judet">
+                                <option selected value="B">BUCURESTI</option>
+                                <option value="AB">ALBA</option>
+                                <option value="AR">ARAD</option>
+                                <option value="AG">ARGES</option>
+                                <option value="BC">BACAU</option>
+                                <option value="BH">BIHOR</option>
+                                <option value="BN">BISTRITA-NASAUD</option>
+                                <option value="BT">BOTOSANI</option>
+                                <option value="BR">BRAILA</option>
+                                <option value="BV">BRASOV</option>
+                                <option value="BZ">BUZAU</option>
+                                <option value="CL">CALARASI</option>
+                                <option value="CS">CARAS-SEVERIN</option>
+                                <option value="CJ">CLUJ</option>
+                                <option value="CT">CONSTANTA</option>
+                                <option value="CV">COVASNA</option>
+                                <option value="DB">DAMBOVITA</option>
+                                <option value="DJ">DOLJ</option>
+                                <option value="GL">GALATI</option>
+                                <option value="GR">GIURGIU</option>
+                                <option value="GJ">GORJ</option>
+                                <option value="HR">HARGHITA</option>
+                                <option value="HD">HUNEDOARA</option>
+                                <option value="IL">IALOMITA</option>
+                                <option value="IS">IASI</option>
+                                <option value="IF">ILFOV</option>
+                                <option value="MM">MARAMURES</option>
+                                <option value="MH">MEHEDINTI</option>
+                                <option value="MS">MURES</option>
+                                <option value="NT">NEAMT</option>
+                                <option value="OT">OLT</option>
+                                <option value="PH">PRAHOVA</option>
+                                <option value="SJ">SALAJ</option>
+                                <option value="SM">SATU MARE</option>
+                                <option value="SB">SIBIU</option>
+                                <option value="SV">SUCEAVA</option>
+                                <option value="TR">TELEORMAN</option>
+                                <option value="TM">TIMIS</option>
+                                <option value="TL">TULCEA</option>
+                                <option value="VL">VALCEA</option>
+                                <option value="VS">VASLUI</option>
+                                <option value="VN">VRANCEA</option>
+                            </select>
+                            <br/><br/>
+
+                            <label for="localitate">Localitate</label><br/>
+                            <select id="localitate" name="localitate">
+                            </select>
+
+                        </div>
+
+                        <br/><br/>
+
+                        <label for="date">Data incasare</label><br/>
+                        <input type="date" id="date" name="date">
+                        
+                        <br/><br/>
+                        <div id="uploadDiv">
+                            <label for="files">Ataseaza</label><br/>
+                            <input id="files" name="files" required type="file" multiple/>
+                            <br/><br/>
+                        </div>
+
+                        <button class="submit-btn" type="submit">Trimite</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</center>
+<script src="../static/scriptExtras.js"></script>
+</body>
+</html>

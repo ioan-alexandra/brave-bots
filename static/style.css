@@ -1,0 +1,168 @@
+input,
+select {
+    font-size: 1.8em !important;
+    border-radius: 30px;
+    padding: 5px 0 5px 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.serviceBox {
+    color: #036c78;
+    font-family: "Zen Maru Gothic", sans-serif;
+    text-align: center;
+    padding: 30px 25px 40px;
+    border-radius: 0 80px;
+    border: 2px dashed #036c78;
+    position: relative;
+    z-index: 1;
+}
+
+.serviceBox:before {
+    content: "";
+    background: #f4f4f4;
+    border-radius: 0 70px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+.serviceBox:after {
+    content: "";
+    background: #036c78;
+    width: 130px;
+    height: 70px;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    z-index: -2;
+}
+
+@media only screen and (max-width: 990px) {
+    .serviceBox {
+        margin: 0 10px 30px;
+    }
+}
+
+.serviceBox .service-icon {
+    font-size: 45px;
+    margin: 0 auto 15px;
+}
+
+.serviceBox .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.serviceBox .description {
+    color: #444;
+    font-size: 15px;
+}
+
+.serviceBox.yellow {
+    color: #d38a0c;
+    border-color: #d38a0c;
+}
+
+.serviceBox.yellow a {
+    color: #d38a0c !important;
+}
+
+.serviceBox.yellow:after {
+    background-color: #d38a0c;
+    height: 130px;
+    width: 100px;
+    border-radius: 0 0 0 80px;
+    top: auto;
+    bottom: -9px;
+}
+
+.serviceBox.purple {
+    color: #8455d0;
+    border-color: #8455d0;
+}
+
+.serviceBox.purple a {
+    color: #8455d0 !important;
+}
+
+.serviceBox.purple:after {
+    background-color: #8455d0;
+    top: auto;
+    bottom: -9px;
+    left: auto;
+    right: -9px;
+}
+
+.serviceBox.blue {
+    color: #00549E;
+    border-color: #00549E;
+}
+
+.serviceBox.blue a {
+    color: #00549E !important;
+}
+
+.serviceBox.blue:after {
+    background-color: #00549E;
+}
+
+
+.serviceBox.red {
+    color: #cd4b4c;
+    border-color: #cd4b4c;
+}
+
+.serviceBox.red a {
+    color: #cd4b4c !important;
+}
+
+.serviceBox.red:after {
+    background-color: #cd4b4c;
+    width: 100px;
+    height: 130px;
+    border-radius: 0 85px 0 0;
+    left: auto;
+    right: -9px;
+}
+
+.container-fluid a {
+    color: white !important;
+    font-size: 1.5em;
+}
+
+button {
+    font-size: 2em !important;
+    border-radius: 30px;
+    color: white !important;
+    padding: 5px 25px 5px 25px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+        font-size: 2em !important;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
